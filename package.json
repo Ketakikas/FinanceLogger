@@ -1,0 +1,14 @@
+{
+  "name": "finance-logger",
+  "version": "0.0.1",
+  "description": "Awesome Finance logger",
+  "main": "app.js",
+  "scripts": {
+    "compile": "tsc --watch"
+  },
+  "author": "KetakiK",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.1"
+  }
+}
