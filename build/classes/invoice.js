@@ -5,6 +5,6 @@ export class Invoice {
         this.amount = amount;
     }
     format() {
-        return `Amount: ${'$' + this.amount} to be charged for ${this.title}`;
+        return `${this.createdAt.getDate() + "/" + this.createdAt.getMonth() + "/" + this.createdAt.getFullYear()}:Amount: ${'$' + this.amount} to be charged for ${this.title}`;
     }
 }

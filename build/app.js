@@ -1,41 +1,6 @@
-"use strict";
-class Invoice {
-    constructor(title, createdAt, amount) {
-        this.title = title;
-        this.createdAt = createdAt;
-        this.amount = amount;
-    }
-    format() {
-        return `Amount: ${'$' + this.amount} to be charged for ${this.title}`;
-    }
-}
-class Payment {
-    constructor(title, createdAt, amount) {
-        this.title = title;
-        this.createdAt = createdAt;
-        this.amount = amount;
-    }
-    format() {
-        return `Amount: ${'$' + this.amount} to be paid for ${this.title}`;
-    }
-}
-class ListTemplate {
-    constructor(container) {
-        this.container = container;
-    }
-    render(item, heading) {
-        const li = document.createElement("li");
-        li.className = "list-group-item";
-        const h4 = document.createElement("h5");
-        h4.className = "float-right";
-        h4.innerHTML = heading.toUpperCase();
-        li.append(h4);
-        const p = document.createElement("p");
-        p.innerHTML = item.format();
-        li.append(p);
-        this.container.append(li);
-    }
-}
+import { Invoice } from './classes/invoice.js';
+import { Payment } from './classes/payment.js';
+import { ListTemplate } from './model/listTemplate.js';
 window.onload = () => {
     //     let Uname:string;
     //     const btnClick=document.getElementById("btnClick") as HTMLButtonElement;

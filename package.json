@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Awesome Finance logger",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "compile": "tsc --watch"
   },
