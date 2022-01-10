@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ES6",
+    "module": "ES6", // as browser understands es6 only not commonjs
     "rootDir": "./src", //from where to read ts file
     "outDir": "./build",//where js files will b stored in project
     "esModuleInterop": true,
