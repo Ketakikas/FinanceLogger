@@ -5,6 +5,9 @@ export class Invoice {
         this.amount = amount;
     }
     format() {
-        return `${this.createdAt.getDate() + "/" + this.createdAt.getMonth() + "/" + this.createdAt.getFullYear()}:Amount: ${'$' + this.amount} to be charged for ${this.title}`;
+        const day = this.createdAt.toLocaleString("en-us", { day: "numeric" });
+        const month = this.createdAt.toLocaleString("en-us", { month: "numeric" });
+        const year = this.createdAt.toLocaleString("en-us", { year: "numeric" });
+        return `${month}/${day}/${year}:  Amount: ${'$' + this.amount} to be charged for ${this.title}`;
     }
 }
